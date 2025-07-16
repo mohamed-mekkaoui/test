@@ -1,0 +1,13 @@
+1-Init :  poetry run graphrag init --root ./graphrag_index2 
+2-Index : poetry run graphrag index --root ./graphrag_index2  --config ./graphrag_index2/settings.yaml
+3-Requete : graphrag query --method global --query "de quoi parle les document" --config ./graphrag_index2/settings.yaml --data ./graphrag_index2/output --root ./graphrag_index2
+
+
+
+
+
+
+
+poetry run graphrag init --root ./graphrag_index2 
+
+poetry run graphrag index --root ./graphrag_index2  --config ./graphrag_index2/settings.yaml

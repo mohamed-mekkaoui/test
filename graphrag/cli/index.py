@@ -50,6 +50,7 @@ def index_cli(
     output_dir: Path | None,
 ):
     """Run the pipeline with the given config."""
+    print("mohamed")
     cli_overrides = {}
     if output_dir:
         cli_overrides["output.base_dir"] = str(output_dir)
@@ -111,7 +112,7 @@ def _run_index(
 ):
     # Configure the root logger with the specified log level
     from graphrag.logger.standard_logging import init_loggers
-
+    print("mohamed")
     # Initialize loggers and reporting config
     init_loggers(
         config=config,

@@ -50,6 +50,7 @@ def initialize_project_at(path: Path, force: bool) -> None:
     ValueError
         If the project already exists and force is False.
     """
+    print("mohamed")
     logger.info("Initializing project at %s", path)
     root = Path(path)
     if not root.exists():
